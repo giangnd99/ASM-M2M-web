@@ -15,10 +15,10 @@ function updateCountDownTime() {
   const minute = Math.floor(diff / 1000 / 60) % 60;
   const second = Math.floor(diff / 1000) % 60;
 
-  days.innerHTML = day < 10 ? "0" + day : day;
-  hours.innerHTML = hour < 10 ? "0" + hour : hour;
-  minutes.innerHTML = minute < 10 ? "0" + minute : minute;
-  seconds.innerHTML = second < 10 ? "0" + second : second;
+  days.innerHTML = day < 10 ? '0' + day : day;
+  hours.innerHTML = hour < 10 ? '0' + hour : hour;
+  minutes.innerHTML = minute < 10 ? '0' + minute : minute;
+  seconds.innerHTML = second < 10 ? '0' + second : second;
 }
 
 setInterval(updateCountDownTime, 1000);

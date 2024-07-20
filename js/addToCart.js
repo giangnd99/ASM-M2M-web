@@ -185,7 +185,8 @@ function changeQuantity($idProduct, $type) {
 const swiper = new Swiper(".product-slider", {
   loop: true,
   autoplay: {
-    delay: 2000, // 1 giây
+    delay: 1500, // 1.5 giây
+    disableOnInteraction: false,
   },
   breakpoints: {
     0: {
