@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/payment-style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="payment-container active">
       <form action="">
+        <div id="close-login-btn" class="fas fa-times"></div>
         <div class="row">
           <div class="col">
             <h3 class="title">Thông tin thanh toán</h3>
 
             <div class="inputBox">
               <span>Họ và tên :</span>
-              <input type="text" placeholder="john deo" />
+              <input type="text" placeholder="NGUYEN DANG GIANG" />
             </div>
             <div class="inputBox">
               <span>email :</span>
@@ -25,17 +34,17 @@
             </div>
             <div class="inputBox">
               <span>Địa chỉ :</span>
-              <input type="text" placeholder="room - street - locality" />
+              <input type="text" placeholder="" />
             </div>
             <div class="inputBox">
               <span>Thành phố :</span>
-              <input type="text" placeholder="mumbai" />
+              <input type="text" placeholder="Thành Phố Hồ Chí Minh" />
             </div>
 
             <div class="flex">
               <div class="inputBox">
                 <span>Quận :</span>
-                <input type="text" placeholder="india" />
+                <input type="text" placeholder="Quận 12" />
               </div>
               <div class="inputBox">
                 <span>zip code :</span>
@@ -53,7 +62,7 @@
             </div>
             <div class="inputBox">
               <span>Tên thẻ :</span>
-              <input type="text" placeholder="mr. john deo" />
+              <input type="text" placeholder="" />
             </div>
             <div class="inputBox">
               <span>Số thẻ :</span>
@@ -81,9 +90,10 @@
             </div>
           </div>
         </div>
-        <button class="submit-btn"><a href="/index.html">Xác nhận thanh toán</a></button>
+        <button class="submit-btn">
+          <a href="/index.html">Xác nhận thanh toán</a>
+        </button>
       </form>
-      <!-- <div class="title-payment"><a href="/index.html">Tiếp tục mua!!!</a></div> -->
     </div>
   </body>
 </html>

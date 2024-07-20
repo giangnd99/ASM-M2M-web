@@ -1,32 +1,3 @@
-let notifications = document.getElementById("notifications");
-
-function createToast(type, icon, title, text) {
-  let newToast = document.createElement("div");
-  newToast.classList.add("toast", type);
-  newToast.innerHTML = `
-    <i class="${icon}"></i>
-    <div class="content">
-      <div class="title">${title}</div>
-      <span>${text}</span>
-      <i class="fa-solid fa-xmark close-icon-toast"></i>
-    </div>`;
-
-  // Adding event listener for close icon
-  newToast
-    .querySelector(".close-icon-toast")
-    .addEventListener("click", function () {
-      notifications.removeChild(newToast);
-    });
-  notifications.appendChild(newToast);
-
-  // Optionally, remove the toast after a certain time
-  setTimeout(() => {
-    if (notifications.contains(newToast)) {
-      notifications.removeChild(newToast);
-    }
-  }, 5000); // Adjust the timeout duration as needed
-}
-
 let iconCart = document.querySelector(".icons #iconCart");
 let cart = document.querySelector(".cart");
 let container = document.querySelector(".container");
