@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách sản phẩm bán chạy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/detail-layout/style-detail.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body onload="showNextBook()">
+    <div class="backgroundAdmin"></div>
+    <div class="notifications" id="notifications">
+      
+      </div>
+    </div>
+    <!-- header start -->
+    <header class="header">
+      <div class="header-1">
+        <a href="" class="logo"><i class="fas fa-book"></i>Câu lạc bộ M2M</a>
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="Tìm kiếm tại đây..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+          <div id="iconCart" class="fas fa-shopping-cart">
+            <span class="totalQuantity">0</span>
+          </div>
+          <a href="" class="fas fa-heart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+        </div>
+      </div>
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="">Trang chủ</a>
+          <a href="">Thư viện</a>
+          <a href="">Đánh giá</a>
+          <a href="">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- bottom navbar -->
+    <div class="bottom-navbar">
+      <a href="" class="fas fa-home"></a>
+      <a href="" class="fas fa-list"></a>
+      <a href="" class="fas fa-tags"></a>
+      <a href="" class="fas fa-comments"></a>
+      <a href="" class="fas fa-blogs"></a>
+    </div>
+    <!-- login-form -->
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+      <form action="">
+        <h3>Đăng nhập</h3>
+        <span>Tên tài khoản</span>
+        <input type="email" class="box" placeholder="Điền tên đăng nhập" id="emailInput" />
+        <input type="password" class="box" placeholder="Điền mật khẩu" id="passwordInput" />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">Nhớ tài khoản</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>Quên mật khẩu ? <a href="#">Nhấn vào đây</a></p>
+        <p>Bạn chưa có tài khoản ? <a href="#">Nhấn vào đây</a></p>
+      </form>
+    </div>
+    <!-- home section start  -->
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Giảm giá 70%</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            molestias quam voluptatum officiis ipsum odit delectus tempora
+            incidunt aliquid. Dolor aspernatur iste ab corrupti quidem obcaecati
+            provident corporis est dolore?
+          </p>
+          <a href="" class="btn">Mua ngay</a>
+        </div>
+        <div class="books-slider">
+          <div class="wraper">
+            <a href=""><img id="book-images" src="" alt="" /></a>
+          </div>
+          <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+          </div>
+          <img src="img/stand.png" class="stand" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section end  -->
+    <!-- list product start -->
+    <div class="products">
+      <div class="heading">
+        <span>Danh sách sản phẩm bán chạy</span>
+      </div>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box item">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="/path/to/image1.jpg" alt="Product Image 1" />
+            </div>
+            <div class="content">
+              <h3>CoPilot / Black / Automatic</h3>
+              <div class="price">$550</div>
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    
+    <div class="cart">
+      <h2>Giỏ hàng xem trước</h2>
+      <div class="listCart">
+        <div class="item">
+           <img src="" />
+          <div class="content">
+            <div class="name">CoPilot / Black / Automatic</div>
+            <div class="price">$550 / 1 product</div>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <span class="value">3</span>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="close">Đóng</div>
+        <div class="checkout">
+          <a href="layout/checkout.html">Kiểm tra</a>
+        </div>
+      </div>
+    </div>
+    <!-- list product end -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/book.js"></script>
+    <script src="js/addToCart.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/detail-layout/style-detail.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <span class="title">Thông tin sản phẩm</span>
+    </div>
+    <div class="product">
+      <div class="name">Product Name</div>
+      <div class="price">$100</div>
+      <p class="content">Product Description</p>
+      <div class="button">
+        <button id="checkout">Kiểm tra giỏ hàng</button>
+        <button id="addToCart">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div class="products">
+      <div class="heading">
+        <span>Sản phẩm tương tự</span>
+      </div>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="/img/book-1.jpg" alt="Product Image" />
+            </div>
+            <div class="content">
+              <h3>Product-1</h3>
+              <div class="price">100<span>120</span></div>
+              <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/addToCart.js"></script>
+  </body>
+</html>
