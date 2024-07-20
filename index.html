@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/detail-layout/style-detail.css">
+    <link rel="stylesheet" href="css/countdown/countdown-style.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -86,10 +87,27 @@
         <div class="content">
           <h3>Giảm giá 70%</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            molestias quam voluptatum officiis ipsum odit delectus tempora
-            incidunt aliquid. Dolor aspernatur iste ab corrupti quidem obcaecati
-            provident corporis est dolore?
+            <div class="countdown-container">
+              <h1>Còn lại</h1>
+              <div class="countdown" id="countdown">
+                <div class="time">
+                  <h2 id="days">00</h2>
+                  <small>Ngày</small>
+                </div>
+                <div class="time">
+                  <h2 id="hours">00</h2>
+                  <small>Giờ</small>
+                </div>
+                <div class="time">
+                  <h2 id="minutes">00</h2>
+                  <small>Phút</small>
+                </div>
+                <div class="time">
+                  <h2 id="seconds">00</h2>
+                  <small>Giây</small>
+                </div>
+              </div>
+            </div>
           </p>
           <a href="" class="btn">Mua ngay</a>
         </div>
@@ -160,6 +178,7 @@
     </div>
     <!-- list product end -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
     <script src="js/script.js"></script>
     <script src="js/book.js"></script>
     <script src="js/addToCart.js"></script>
