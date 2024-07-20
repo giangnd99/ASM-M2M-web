@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Thông tin thanh toán</h3>
+
+            <div class="inputBox">
+              <span>Họ và tên :</span>
+              <input type="text" placeholder="john deo" />
+            </div>
+            <div class="inputBox">
+              <span>email :</span>
+              <input type="email" placeholder="example@example.com" />
+            </div>
+            <div class="inputBox">
+              <span>Địa chỉ :</span>
+              <input type="text" placeholder="room - street - locality" />
+            </div>
+            <div class="inputBox">
+              <span>Thành phố :</span>
+              <input type="text" placeholder="mumbai" />
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>Quận :</span>
+                <input type="text" placeholder="india" />
+              </div>
+              <div class="inputBox">
+                <span>zip code :</span>
+                <input type="text" placeholder="123 456" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">Thanh toán</h3>
+
+            <div class="inputBox">
+              <span>Phương thức thanh toán :</span>
+              <img src="images/card_img.png" alt="" />
+            </div>
+            <div class="inputBox">
+              <span>Tên thẻ :</span>
+              <input type="text" placeholder="mr. john deo" />
+            </div>
+            <div class="inputBox">
+              <span>Số thẻ :</span>
+              <input type="number" placeholder="1111-2222-3333-4444" />
+            </div>
+            <fieldset>
+              <legend>Ngày hết hạn</legend>
+              <fieldset>
+                <span>Tháng :</span>
+                <input
+                  type="number"
+                  placeholder="Tháng"
+                  max="12"
+                  min="1"
+                /><br />
+
+                <span>Năm :</span>
+                <input type="number" placeholder="2022" />
+              </fieldset>
+            </fieldset>
+
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="text" placeholder="1234" />
+            </div>
+          </div>
+        </div>
+        <button class="submit-btn"><a href="/index.html">Xác nhận thanh toán</a></button>
+      </form>
+      <!-- <div class="title-payment"><a href="/index.html">Tiếp tục mua!!!</a></div> -->
+    </div>
+  </body>
+</html>
